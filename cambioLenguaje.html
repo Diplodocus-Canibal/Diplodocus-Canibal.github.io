@@ -1,0 +1,54 @@
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>jQuery UI Effects - switchClass Demo</title>
+    <link
+      rel="stylesheet"
+      href="//code.jquery.com/ui/1.11.2/themes/smoothness/jquery-ui.css"
+    />
+    <link rel="stylesheet" href="lenguaje.css" />
+    <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="//code.jquery.com/ui/1.11.2/jquery-ui.js"></script>
+  </head>
+
+  <body>
+    <!--<div id="language-toggle" class="switch-toggle switch-candy">
+  <input id="EN" name="view" type="radio" checked>
+  <label for="EN" onclick="">EN</label>
+  <input id="ID" name="view" type="radio">
+  <label for="ID" onclick="">ID</label>
+  <a></a>
+</div>-->
+
+    <label id="language-toggle" class="switch-light switch-candy" onclick="">
+      <input type="checkbox" />
+      <span>
+        Lenguaje:
+        <span>ES</span>
+        <span>JP</span>
+      </span>
+      <a></a>
+    </label>
+
+    <div class="text-on ui-corner-all">
+      <h1>Chistaco</h1>
+      <p>
+        Me sacaron del grupo de WhatsApp de paracaidismo. Se ve que no caía bien.
+      </p>
+    </div>
+    <div class="text-off ui-corner-all">
+      <h1>チスタコ</h1>
+      <p>
+        彼らはスカイダイビングのWhatsAppグループから私を連れ出しました。うまく落ちなかったようです。
+      </p>
+    </div>
+    <script>
+      $(function () {
+        $("#language-toggle").click(function () {
+          $(".text-on").switchClass("text-on", "text-off", 10);
+          $(".text-off").switchClass("text-off", "text-on", 10);
+        });
+      });
+    </script>
+  </body>
+</html>

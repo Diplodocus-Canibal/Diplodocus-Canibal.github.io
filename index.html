@@ -44,6 +44,7 @@
               href="https://www.w3schools.com/xml/dom_examples.asp"
               id="example"
             ></a>
+            <a class="nav-link" href="cambioLenguaje.html" id="language"></a>
           </div>
         </div>
       </div>
@@ -103,6 +104,8 @@
           xmlDoc.getElementsByTagName("indice")[1].childNodes[0].nodeValue;
         document.getElementById("example").innerHTML =
           xmlDoc.getElementsByTagName("indice")[2].childNodes[0].nodeValue;
+        document.getElementById("language").innerHTML =
+          xmlDoc.getElementsByTagName("lenguaje")[0].childNodes[0].nodeValue;
       }
     </script>
     <script
