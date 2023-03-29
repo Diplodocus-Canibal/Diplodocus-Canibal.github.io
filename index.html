@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
-  <head>ç<title>Guia XML</title>
+  <head>
+    <title>Guia XML</title>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -31,8 +32,16 @@
               href="index.html"
               id="home"
             ></a>
-            <a class="nav-link" href="https://www.w3schools.com/xml/" id="doc"></a>
-            <a class="nav-link" href="https://www.w3schools.com/xml/dom_examples.asp" id="example"></a>
+            <a
+              class="nav-link"
+              href="https://www.w3schools.com/xml/"
+              id="doc"
+            ></a>
+            <a
+              class="nav-link"
+              href="https://www.w3schools.com/xml/dom_examples.asp"
+              id="example"
+            ></a>
           </div>
         </div>
       </div>
@@ -51,16 +60,20 @@
 
       function myFunction(xml) {
         var xmlDoc = xml.responseXML;
-        document.getElementById("titulo").innerHTML = xmlDoc.getElementsByTagName("titulo")[0].childNodes[0].nodeValue;
-        document.getElementById("home").innerHTML = xmlDoc.getElementsByTagName("indice")[0].childNodes[0].nodeValue;
-        document.getElementById("doc").innerHTML = xmlDoc.getElementsByTagName("indice")[1].childNodes[0].nodeValue;
-        document.getElementById("example").innerHTML = xmlDoc.getElementsByTagName("indice")[2].childNodes[0].nodeValue;
+        document.getElementById("titulo").innerHTML =
+          xmlDoc.getElementsByTagName("titulo")[0].childNodes[0].nodeValue;
+        document.getElementById("home").innerHTML =
+          xmlDoc.getElementsByTagName("indice")[0].childNodes[0].nodeValue;
+        document.getElementById("doc").innerHTML =
+          xmlDoc.getElementsByTagName("indice")[1].childNodes[0].nodeValue;
+        document.getElementById("example").innerHTML =
+          xmlDoc.getElementsByTagName("indice")[2].childNodes[0].nodeValue;
       }
     </script>
     <script
-    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N"
-    crossorigin="anonymous"
-  ></script>
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
