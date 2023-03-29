@@ -16,30 +16,9 @@ body {
     display: none;
   }
   
-  /*
-  * CSS TOGGLE SWITCHES
-  * Unlicense
-  *
-  * Ionuț Colceriu - ghinda.net
-  * https://github.com/ghinda/css-toggle-switch
-  *
-  */
-  /* Supported values are px, rem-calc, em-calc */
-  /* Functions */
-  /* Toggle Switches */
-  /* Shared */
-  /* Checkbox
-  */
-  /* Radio Switch
-  */
-  /* Hide by default
-  */
   .switch-toggle a, .switch-light span span {
     display: none; }
   
-  /* We can't test for a specific feature,
-  * so we only target browsers with support for media queries.
-  */
   @media only screen {
     /* Checkbox switch
     */
