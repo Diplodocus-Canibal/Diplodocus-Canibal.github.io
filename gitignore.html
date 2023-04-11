@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gitignore</title>
+  </head>
+  <body>
+    <h1>El usuario es:  <span id="user"></span></h1>
+    </br>
+    <h1>La contraseña es:  <span id="pass"></span></h1>
+
+
+    <script>
+      var xhttp = new XMLHttpRequest();
+      xhttp.onreadystatechange = function () {
+        if (this.readyState == 4 && this.status == 200) {
+          myFunction(this);
+        }
+      };
+      xhttp.open("GET", "secretos.xml", true);
+      xhttp.send();
+
+      function myFunction(xml) {
+        var xmlDoc = xml.responseXML;
+        document.getElementById("user").innerHTML =
+          xmlDoc.getElementsByTagName("user")[0].childNodes[0].nodeValue;
+        document.getElementById("pass").innerHTML =
+          xmlDoc.getElementsByTagName("pass")[0].childNodes[0].nodeValue;
+        
+          
+      }
+    </script>
+  </body>
+</html>
