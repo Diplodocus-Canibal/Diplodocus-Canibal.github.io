@@ -1,0 +1,10 @@
+.carousel {
+  width: 320px;
+  height: 180px;
+}
+
+.mandi {
+  display: flex;
+  justify-content: center;
+  margin-top: 2%;
+}
