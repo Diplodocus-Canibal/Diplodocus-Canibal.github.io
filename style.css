@@ -2,6 +2,7 @@
 *{
     margin: 0px;
     padding: 0px;
+    
 }
 
 .container > header {
@@ -29,6 +30,7 @@ table {
     border-collapse: collapse;
     width: 100%;
     background: #ffffff48;
+    font-family: "krunch";
 }
 
 th {
@@ -203,3 +205,10 @@ body{
     }
 
 }
+
+@font-face {
+    font-family: 'krunch';
+    src: url('krunch.ttf') format('truetype');
+    font-style: normal;
+    font-weight: normal;
+  }
